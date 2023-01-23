@@ -28,6 +28,12 @@ public class LoginForm {
         this.password = password;
     }
 
+    public LoginForm() {
+    }
 
+    public LoginForm(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
 
 }

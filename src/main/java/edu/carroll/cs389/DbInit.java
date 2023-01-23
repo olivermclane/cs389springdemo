@@ -26,7 +26,7 @@ public class DbInit {
     @PostConstruct
     public void loadData() {
         // If the user doesn't exist in the database, populate it
-        final List<Login> defaultUsers = loginRepo.findByUsernameIgnoreCase(    defaultUsername);
+        final List<Login> defaultUsers = loginRepo.findByUsernameIgnoreCase(defaultUsername);
         if (defaultUsers.isEmpty()) {
             Login defaultUser = new Login();
             defaultUser.setUsername(defaultUsername);
