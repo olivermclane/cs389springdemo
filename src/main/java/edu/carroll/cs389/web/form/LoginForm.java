@@ -1,7 +1,7 @@
 package edu.carroll.cs389.web.form;
 
 import jakarta.validation.constraints.Size;
-import org.jetbrains.annotations.NotNull;
+import jakarta.validation.constraints.NotNull;
 
 public class LoginForm {
     @NotNull
